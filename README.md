@@ -1,7 +1,10 @@
-# test coverage for  [unirest (v0.5.1)](https://github.com/Mashape/unirest-nodejs#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-unirest.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-unirest) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-unirest.svg)](https://travis-ci.org/npmtest/node-npmtest-unirest)
+# npmtest-unirest
+
+#### test coverage for  [unirest (v0.5.1)](https://github.com/Mashape/unirest-nodejs#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-unirest.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-unirest) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-unirest.svg)](https://travis-ci.org/npmtest/node-npmtest-unirest)
+
 #### Simplified, lightweight HTTP client library
 
-[![NPM](https://nodei.co/npm/unirest.png?downloads=true)](https://www.npmjs.com/package/unirest)
+[![NPM](https://nodei.co/npm/unirest.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/unirest)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-unirest/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-unirest/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-unirest/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-unirest/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-unirest/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-unirest/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-unirest/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-unirest/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-unirest/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-unirest/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-unirest%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-unirest/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-unirest/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-unirest/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-unirest/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-unirest%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-unirest/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-unirest/build/test-report.html](https://npmtest.github.io/node-npmtest-unirest/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-unirest/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-unirest/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-unirest/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-unirest/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-unirest/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-unirest/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-unirest/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +37,6 @@
 {
     "author": {
         "name": "Mashape",
-        "email": "opensource@mashape.com",
         "url": "https://www.mashape.com"
     },
     "bugs": {
@@ -69,13 +77,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "nijikokun",
-            "email": "nijikokun@gmail.com"
+            "name": "nijikokun"
         }
     ],
     "name": "unirest",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/Mashape/unirest-nodejs.git"
