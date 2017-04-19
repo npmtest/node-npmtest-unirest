@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-unirest/unirest/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-unirest/node_modules/unirest/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-unirest">npmtest-unirest (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-unirest/unirest/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-unirest/node_modules/unirest/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">10.74% <small>(42 / 391)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-unirest/unirest/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-unirest/node_modules/unirest/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -2429,8 +2427,8 @@ mime.define({
  * @type {Object}
  */
 var Unirest = function (method, uri, headers, body, callback) {
-  var unirest = <span class="fstat-no" title="function not covered" >function (uri, headers, body, callback) {</span>
-<span class="cstat-no" title="statement not covered" >    var $this = {</span>
+  var unirest = <span class="fstat-no" title="function not covered">function (uri, headers, body, callback) {</span>
+<span class="cstat-no" title="statement not covered">    var $this = {</span>
       /**
        * Stream Multipart form-data request
        *
@@ -2482,23 +2480,23 @@ var Unirest = function (method, uri, headers, body, callback) {
         headers: {}
       },
 &nbsp;
-      hasHeader: <span class="fstat-no" title="function not covered" >function (name) {</span>
-<span class="cstat-no" title="statement not covered" >        var headers</span>
-<span class="cstat-no" title="statement not covered" >        var lowercaseHeaders</span>
+      hasHeader: <span class="fstat-no" title="function not covered">function (name) {</span>
+<span class="cstat-no" title="statement not covered">        var headers</span>
+<span class="cstat-no" title="statement not covered">        var lowercaseHeaders</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        name = name.toLowerCase()</span>
-<span class="cstat-no" title="statement not covered" >        headers = Object.keys($this.options.headers)</span>
-<span class="cstat-no" title="statement not covered" >        lowercaseHeaders = headers.map(<span class="fstat-no" title="function not covered" >function (header) {</span></span>
-<span class="cstat-no" title="statement not covered" >          return header.toLowerCase()</span>
+<span class="cstat-no" title="statement not covered">        name = name.toLowerCase()</span>
+<span class="cstat-no" title="statement not covered">        headers = Object.keys($this.options.headers)</span>
+<span class="cstat-no" title="statement not covered">        lowercaseHeaders = headers.map(<span class="fstat-no" title="function not covered">function (header) {</span></span>
+<span class="cstat-no" title="statement not covered">          return header.toLowerCase()</span>
         })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        for (var i = 0; i &lt; lowercaseHeaders.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >          if (lowercaseHeaders[i] === name) {</span>
-<span class="cstat-no" title="statement not covered" >            return headers[i]</span>
+<span class="cstat-no" title="statement not covered">        for (var i = 0; i &lt; lowercaseHeaders.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">          if (lowercaseHeaders[i] === name) {</span>
+<span class="cstat-no" title="statement not covered">            return headers[i]</span>
           }
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return false</span>
+<span class="cstat-no" title="statement not covered">        return false</span>
       },
 &nbsp;
       /**
@@ -2506,9 +2504,9 @@ var Unirest = function (method, uri, headers, body, callback) {
        *
        * @return {Object}
        */
-      stream: <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >        $this._stream = true</span>
-<span class="cstat-no" title="statement not covered" >        return this</span>
+      stream: <span class="fstat-no" title="function not covered">function () {</span>
+<span class="cstat-no" title="statement not covered">        $this._stream = true</span>
+<span class="cstat-no" title="statement not covered">        return this</span>
       },
 &nbsp;
       /**
@@ -2518,8 +2516,8 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {String} value
        * @return {Object}
        */
-      field: <span class="fstat-no" title="function not covered" >function (name, value, options) {</span>
-<span class="cstat-no" title="statement not covered" >        return handleField(name, value, options)</span>
+      field: <span class="fstat-no" title="function not covered">function (name, value, options) {</span>
+<span class="cstat-no" title="statement not covered">        return handleField(name, value, options)</span>
       },
 &nbsp;
       /**
@@ -2529,10 +2527,10 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {String|Object} path
        * @return {Object}
        */
-      attach: <span class="fstat-no" title="function not covered" >function (name, path, options) {</span>
-<span class="cstat-no" title="statement not covered" >        options = options || {}</span>
-<span class="cstat-no" title="statement not covered" >        options.attachment = true</span>
-<span class="cstat-no" title="statement not covered" >        return handleField(name, path, options)</span>
+      attach: <span class="fstat-no" title="function not covered">function (name, path, options) {</span>
+<span class="cstat-no" title="statement not covered">        options = options || {}</span>
+<span class="cstat-no" title="statement not covered">        options.attachment = true</span>
+<span class="cstat-no" title="statement not covered">        return handleField(name, path, options)</span>
       },
 &nbsp;
       /**
@@ -2543,8 +2541,8 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {Object} options
        * @return {Object}
        */
-      rawField: <span class="fstat-no" title="function not covered" >function (name, value, options) {</span>
-<span class="cstat-no" title="statement not covered" >        $this._multipart.push({</span>
+      rawField: <span class="fstat-no" title="function not covered">function (name, value, options) {</span>
+<span class="cstat-no" title="statement not covered">        $this._multipart.push({</span>
           name: name,
           value: value,
           options: options,
@@ -2563,14 +2561,14 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {Boolean} sendImmediately
        * @return {Object}
        */
-      auth: <span class="fstat-no" title="function not covered" >function (user, password, sendImmediately) {</span>
-<span class="cstat-no" title="statement not covered" >        $this.options.auth = (is(user).a(Object)) ? user : {</span>
+      auth: <span class="fstat-no" title="function not covered">function (user, password, sendImmediately) {</span>
+<span class="cstat-no" title="statement not covered">        $this.options.auth = (is(user).a(Object)) ? user : {</span>
           user: user,
           password: password,
           sendImmediately: sendImmediately
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return $this</span>
+<span class="cstat-no" title="statement not covered">        return $this</span>
       },
 &nbsp;
       /**
@@ -2580,21 +2578,21 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {String} value Header field value
        * @return {Object}
        */
-      header: <span class="fstat-no" title="function not covered" >function (field, value) {</span>
-<span class="cstat-no" title="statement not covered" >        if (is(field).a(Object)) {</span>
-<span class="cstat-no" title="statement not covered" >          for (var key in field) {</span>
-<span class="cstat-no" title="statement not covered" >            if (field.hasOwnProperty(key)) {</span>
-<span class="cstat-no" title="statement not covered" >              $this.header(key, field[key])</span>
+      header: <span class="fstat-no" title="function not covered">function (field, value) {</span>
+<span class="cstat-no" title="statement not covered">        if (is(field).a(Object)) {</span>
+<span class="cstat-no" title="statement not covered">          for (var key in field) {</span>
+<span class="cstat-no" title="statement not covered">            if (field.hasOwnProperty(key)) {</span>
+<span class="cstat-no" title="statement not covered">              $this.header(key, field[key])</span>
             }
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          return $this</span>
+<span class="cstat-no" title="statement not covered">          return $this</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        var existingHeaderName = $this.hasHeader(field)</span>
-<span class="cstat-no" title="statement not covered" >        $this.options.headers[existingHeaderName || field] = value</span>
+<span class="cstat-no" title="statement not covered">        var existingHeaderName = $this.hasHeader(field)</span>
+<span class="cstat-no" title="statement not covered">        $this.options.headers[existingHeaderName || field] = value</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return $this</span>
+<span class="cstat-no" title="statement not covered">        return $this</span>
       },
 &nbsp;
       /**
@@ -2603,11 +2601,11 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {String|Object} value
        * @return {Object}
        */
-      query: <span class="fstat-no" title="function not covered" >function (value) {</span>
-<span class="cstat-no" title="statement not covered" >        if (is(value).a(Object)) <span class="cstat-no" title="statement not covered" >value = Unirest.serializers.form(value)</span></span>
-<span class="cstat-no" title="statement not covered" >        if (!value.length) <span class="cstat-no" title="statement not covered" >return $this</span></span>
-<span class="cstat-no" title="statement not covered" >        $this.options.url += (does($this.options.url).contain('?') ? '&amp;' : '?') + value</span>
-<span class="cstat-no" title="statement not covered" >        return $this</span>
+      query: <span class="fstat-no" title="function not covered">function (value) {</span>
+<span class="cstat-no" title="statement not covered">        if (is(value).a(Object)) <span class="cstat-no" title="statement not covered">value = Unirest.serializers.form(value)</span></span>
+<span class="cstat-no" title="statement not covered">        if (!value.length) <span class="cstat-no" title="statement not covered">return $this</span></span>
+<span class="cstat-no" title="statement not covered">        $this.options.url += (does($this.options.url).contain('?') ? '&amp;' : '?') + value</span>
+<span class="cstat-no" title="statement not covered">        return $this</span>
       },
 &nbsp;
       /**
@@ -2616,11 +2614,11 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {String} type
        * @return {Object}
        */
-      type: <span class="fstat-no" title="function not covered" >function (type) {</span>
-<span class="cstat-no" title="statement not covered" >        $this.header('Content-Type', does(type).contain('/')</span>
+      type: <span class="fstat-no" title="function not covered">function (type) {</span>
+<span class="cstat-no" title="statement not covered">        $this.header('Content-Type', does(type).contain('/')</span>
           ? type
           : mime.lookup(type))
-<span class="cstat-no" title="statement not covered" >        return $this</span>
+<span class="cstat-no" title="statement not covered">        return $this</span>
       },
 &nbsp;
       /**
@@ -2634,47 +2632,47 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {Mixed} data
        * @return {Object}
        */
-      send: <span class="fstat-no" title="function not covered" >function (data) {</span>
-<span class="cstat-no" title="statement not covered" >        var type = $this.options.headers[$this.hasHeader('content-type')]</span>
+      send: <span class="fstat-no" title="function not covered">function (data) {</span>
+<span class="cstat-no" title="statement not covered">        var type = $this.options.headers[$this.hasHeader('content-type')]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if ((is(data).a(Object) || is(data).a(Array)) &amp;&amp; !Buffer.isBuffer(data)) {</span>
-<span class="cstat-no" title="statement not covered" >          if (!type) {</span>
-<span class="cstat-no" title="statement not covered" >            $this.type('form')</span>
-<span class="cstat-no" title="statement not covered" >            type = $this.options.headers[$this.hasHeader('content-type')]</span>
-<span class="cstat-no" title="statement not covered" >            $this.options.body = Unirest.serializers.form(data)</span>
-          } else <span class="cstat-no" title="statement not covered" >if (~type.indexOf('json')) {</span>
-<span class="cstat-no" title="statement not covered" >            $this.options.json = true</span>
+<span class="cstat-no" title="statement not covered">        if ((is(data).a(Object) || is(data).a(Array)) &amp;&amp; !Buffer.isBuffer(data)) {</span>
+<span class="cstat-no" title="statement not covered">          if (!type) {</span>
+<span class="cstat-no" title="statement not covered">            $this.type('form')</span>
+<span class="cstat-no" title="statement not covered">            type = $this.options.headers[$this.hasHeader('content-type')]</span>
+<span class="cstat-no" title="statement not covered">            $this.options.body = Unirest.serializers.form(data)</span>
+          } else <span class="cstat-no" title="statement not covered">if (~type.indexOf('json')) {</span>
+<span class="cstat-no" title="statement not covered">            $this.options.json = true</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if ($this.options.body &amp;&amp; is($this.options.body).a(Object)) {</span>
-<span class="cstat-no" title="statement not covered" >              for (var key in data) {</span>
-<span class="cstat-no" title="statement not covered" >                if (data.hasOwnProperty(key)) {</span>
-<span class="cstat-no" title="statement not covered" >                  $this.options.body[key] = data[key]</span>
+<span class="cstat-no" title="statement not covered">            if ($this.options.body &amp;&amp; is($this.options.body).a(Object)) {</span>
+<span class="cstat-no" title="statement not covered">              for (var key in data) {</span>
+<span class="cstat-no" title="statement not covered">                if (data.hasOwnProperty(key)) {</span>
+<span class="cstat-no" title="statement not covered">                  $this.options.body[key] = data[key]</span>
                 }
               }
             } else {
-<span class="cstat-no" title="statement not covered" >              $this.options.body = data</span>
+<span class="cstat-no" title="statement not covered">              $this.options.body = data</span>
             }
           } else {
-<span class="cstat-no" title="statement not covered" >            $this.options.body = Unirest.Request.serialize(data, type)</span>
+<span class="cstat-no" title="statement not covered">            $this.options.body = Unirest.Request.serialize(data, type)</span>
           }
-        } else <span class="cstat-no" title="statement not covered" >if (is(data).a(String)) {</span>
-<span class="cstat-no" title="statement not covered" >          if (!type) {</span>
-<span class="cstat-no" title="statement not covered" >            $this.type('form')</span>
-<span class="cstat-no" title="statement not covered" >            type = $this.options.headers[$this.hasHeader('content-type')]</span>
+        } else <span class="cstat-no" title="statement not covered">if (is(data).a(String)) {</span>
+<span class="cstat-no" title="statement not covered">          if (!type) {</span>
+<span class="cstat-no" title="statement not covered">            $this.type('form')</span>
+<span class="cstat-no" title="statement not covered">            type = $this.options.headers[$this.hasHeader('content-type')]</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          if (type === 'application/x-www-form-urlencoded') {</span>
-<span class="cstat-no" title="statement not covered" >            $this.options.body = $this.options.body</span>
+<span class="cstat-no" title="statement not covered">          if (type === 'application/x-www-form-urlencoded') {</span>
+<span class="cstat-no" title="statement not covered">            $this.options.body = $this.options.body</span>
               ? $this.options.body + '&amp;' + data
               : data
           } else {
-<span class="cstat-no" title="statement not covered" >            $this.options.body = ($this.options.body || '') + data</span>
+<span class="cstat-no" title="statement not covered">            $this.options.body = ($this.options.body || '') + data</span>
           }
         } else {
-<span class="cstat-no" title="statement not covered" >          $this.options.body = data</span>
+<span class="cstat-no" title="statement not covered">          $this.options.body = data</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return $this</span>
+<span class="cstat-no" title="statement not covered">        return $this</span>
       },
 &nbsp;
       /**
@@ -2699,29 +2697,29 @@ var Unirest = function (method, uri, headers, body, callback) {
        *                                 not under a child property.
        * @return {Object}
        */
-      part: <span class="fstat-no" title="function not covered" >function (options) {</span>
-<span class="cstat-no" title="statement not covered" >        if (!$this._multipart) {</span>
-<span class="cstat-no" title="statement not covered" >          $this.options.multipart = []</span>
+      part: <span class="fstat-no" title="function not covered">function (options) {</span>
+<span class="cstat-no" title="statement not covered">        if (!$this._multipart) {</span>
+<span class="cstat-no" title="statement not covered">          $this.options.multipart = []</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (is(options).a(Object)) {</span>
-<span class="cstat-no" title="statement not covered" >          if (options['content-type']) {</span>
-<span class="cstat-no" title="statement not covered" >            var type = Unirest.type(options['content-type'], true)</span>
-<span class="cstat-no" title="statement not covered" >            if (type) <span class="cstat-no" title="statement not covered" >options.body = Unirest.Response.parse(options.body)</span></span>
+<span class="cstat-no" title="statement not covered">        if (is(options).a(Object)) {</span>
+<span class="cstat-no" title="statement not covered">          if (options['content-type']) {</span>
+<span class="cstat-no" title="statement not covered">            var type = Unirest.type(options['content-type'], true)</span>
+<span class="cstat-no" title="statement not covered">            if (type) <span class="cstat-no" title="statement not covered">options.body = Unirest.Response.parse(options.body)</span></span>
           } else {
-<span class="cstat-no" title="statement not covered" >            if (is(options.body).a(Object)) {</span>
-<span class="cstat-no" title="statement not covered" >              options.body = Unirest.serializers.json(options.body)</span>
+<span class="cstat-no" title="statement not covered">            if (is(options.body).a(Object)) {</span>
+<span class="cstat-no" title="statement not covered">              options.body = Unirest.serializers.json(options.body)</span>
             }
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          $this.options.multipart.push(options)</span>
+<span class="cstat-no" title="statement not covered">          $this.options.multipart.push(options)</span>
         } else {
-<span class="cstat-no" title="statement not covered" >          $this.options.multipart.push({</span>
+<span class="cstat-no" title="statement not covered">          $this.options.multipart.push({</span>
             body: options
           })
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return $this</span>
+<span class="cstat-no" title="statement not covered">        return $this</span>
       },
 &nbsp;
       /**
@@ -2731,224 +2729,224 @@ var Unirest = function (method, uri, headers, body, callback) {
        * @param  {Function} callback
        * @return {Object}
        */
-      end: <span class="fstat-no" title="function not covered" >function (callback) {</span>
-<span class="cstat-no" title="statement not covered" >        var Request</span>
-<span class="cstat-no" title="statement not covered" >        var header</span>
-<span class="cstat-no" title="statement not covered" >        var parts</span>
-<span class="cstat-no" title="statement not covered" >        var form</span>
+      end: <span class="fstat-no" title="function not covered">function (callback) {</span>
+<span class="cstat-no" title="statement not covered">        var Request</span>
+<span class="cstat-no" title="statement not covered">        var header</span>
+<span class="cstat-no" title="statement not covered">        var parts</span>
+<span class="cstat-no" title="statement not covered">        var form</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >        function handleRequestResponse (error, response, body) {</span>
-<span class="cstat-no" title="statement not covered" >          var result = {}</span>
-<span class="cstat-no" title="statement not covered" >          var status</span>
-<span class="cstat-no" title="statement not covered" >          var data</span>
-<span class="cstat-no" title="statement not covered" >          var type</span>
+<span class="fstat-no" title="function not covered">        function handleRequestResponse (error, response, body) {</span>
+<span class="cstat-no" title="statement not covered">          var result = {}</span>
+<span class="cstat-no" title="statement not covered">          var status</span>
+<span class="cstat-no" title="statement not covered">          var data</span>
+<span class="cstat-no" title="statement not covered">          var type</span>
 &nbsp;
           // Handle pure error
-<span class="cstat-no" title="statement not covered" >          if (error &amp;&amp; !response) {</span>
-<span class="cstat-no" title="statement not covered" >            result.error = error</span>
+<span class="cstat-no" title="statement not covered">          if (error &amp;&amp; !response) {</span>
+<span class="cstat-no" title="statement not covered">            result.error = error</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (callback) {</span>
-<span class="cstat-no" title="statement not covered" >              callback(result)</span>
+<span class="cstat-no" title="statement not covered">            if (callback) {</span>
+<span class="cstat-no" title="statement not covered">              callback(result)</span>
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            return</span>
+<span class="cstat-no" title="statement not covered">            return</span>
           }
 &nbsp;
           // Handle No Response...
           // This is weird.
-<span class="cstat-no" title="statement not covered" >          if (!response) {</span>
-<span class="cstat-no" title="statement not covered" >            console.log('This is odd, report this action / request to: http://github.com/mashape/unirest-nodejs')</span>
+<span class="cstat-no" title="statement not covered">          if (!response) {</span>
+<span class="cstat-no" title="statement not covered">            console.log('This is odd, report this action / request to: http://github.com/mashape/unirest-nodejs')</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            result.error = {</span>
+<span class="cstat-no" title="statement not covered">            result.error = {</span>
               message: 'No response found.'
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (callback) {</span>
-<span class="cstat-no" title="statement not covered" >              callback(result)</span>
+<span class="cstat-no" title="statement not covered">            if (callback) {</span>
+<span class="cstat-no" title="statement not covered">              callback(result)</span>
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            return</span>
+<span class="cstat-no" title="statement not covered">            return</span>
           }
 &nbsp;
           // Create response reference
-<span class="cstat-no" title="statement not covered" >          result = response</span>
+<span class="cstat-no" title="statement not covered">          result = response</span>
 &nbsp;
           // Create response status reference
-<span class="cstat-no" title="statement not covered" >          status = response.statusCode</span>
+<span class="cstat-no" title="statement not covered">          status = response.statusCode</span>
 &nbsp;
           // Normalize MSIE response to HTTP 204
-<span class="cstat-no" title="statement not covered" >          status = (status === 1223 ? 204 : status)</span>
+<span class="cstat-no" title="statement not covered">          status = (status === 1223 ? 204 : status)</span>
 &nbsp;
           // Obtain status range typecode (1, 2, 3, 4, 5, etc.)
-<span class="cstat-no" title="statement not covered" >          type = status / 100 | 0</span>
+<span class="cstat-no" title="statement not covered">          type = status / 100 | 0</span>
 &nbsp;
           // Generate sugar helper properties for status information
-<span class="cstat-no" title="statement not covered" >          result.code = status</span>
-<span class="cstat-no" title="statement not covered" >          result.status = status</span>
-<span class="cstat-no" title="statement not covered" >          result.statusType = type</span>
-<span class="cstat-no" title="statement not covered" >          result.info = type === 1</span>
-<span class="cstat-no" title="statement not covered" >          result.ok = type === 2</span>
-<span class="cstat-no" title="statement not covered" >          result.clientError = type === 4</span>
-<span class="cstat-no" title="statement not covered" >          result.serverError = type === 5</span>
-<span class="cstat-no" title="statement not covered" >          result.error = (type === 4 || type === 5) ? (<span class="fstat-no" title="function not covered" >function generateErrorMessage () {</span></span>
-<span class="cstat-no" title="statement not covered" >            var msg = 'got ' + result.status + ' response'</span>
-<span class="cstat-no" title="statement not covered" >            var err = new Error(msg)</span>
-<span class="cstat-no" title="statement not covered" >            err.status = result.status</span>
-<span class="cstat-no" title="statement not covered" >            return err</span>
+<span class="cstat-no" title="statement not covered">          result.code = status</span>
+<span class="cstat-no" title="statement not covered">          result.status = status</span>
+<span class="cstat-no" title="statement not covered">          result.statusType = type</span>
+<span class="cstat-no" title="statement not covered">          result.info = type === 1</span>
+<span class="cstat-no" title="statement not covered">          result.ok = type === 2</span>
+<span class="cstat-no" title="statement not covered">          result.clientError = type === 4</span>
+<span class="cstat-no" title="statement not covered">          result.serverError = type === 5</span>
+<span class="cstat-no" title="statement not covered">          result.error = (type === 4 || type === 5) ? (<span class="fstat-no" title="function not covered">function generateErrorMessage () {</span></span>
+<span class="cstat-no" title="statement not covered">            var msg = 'got ' + result.status + ' response'</span>
+<span class="cstat-no" title="statement not covered">            var err = new Error(msg)</span>
+<span class="cstat-no" title="statement not covered">            err.status = result.status</span>
+<span class="cstat-no" title="statement not covered">            return err</span>
           })() : false
 &nbsp;
           // Iterate over Response Status Codes and generate more sugar
-<span class="cstat-no" title="statement not covered" >          for (var name in Unirest.Response.statusCodes) {</span>
-<span class="cstat-no" title="statement not covered" >            result[name] = Unirest.Response.statusCodes[name] === status</span>
+<span class="cstat-no" title="statement not covered">          for (var name in Unirest.Response.statusCodes) {</span>
+<span class="cstat-no" title="statement not covered">            result[name] = Unirest.Response.statusCodes[name] === status</span>
           }
 &nbsp;
           // Cookie Holder
-<span class="cstat-no" title="statement not covered" >          result.cookies = {}</span>
+<span class="cstat-no" title="statement not covered">          result.cookies = {}</span>
 &nbsp;
           // Cookie Sugar Method
-<span class="cstat-no" title="statement not covered" >          result.cookie = <span class="fstat-no" title="function not covered" >function (name) {</span></span>
-<span class="cstat-no" title="statement not covered" >            return result.cookies[name]</span>
+<span class="cstat-no" title="statement not covered">          result.cookie = <span class="fstat-no" title="function not covered">function (name) {</span></span>
+<span class="cstat-no" title="statement not covered">            return result.cookies[name]</span>
           }
 &nbsp;
-<span class="fstat-no" title="function not covered" >          function setCookie (cookie) {</span>
-<span class="cstat-no" title="statement not covered" >            var crumbs = Unirest.trim(cookie).split('=')</span>
-<span class="cstat-no" title="statement not covered" >            var key = Unirest.trim(crumbs[0])</span>
-<span class="cstat-no" title="statement not covered" >            var value = Unirest.trim(crumbs.slice(1).join('='))</span>
+<span class="fstat-no" title="function not covered">          function setCookie (cookie) {</span>
+<span class="cstat-no" title="statement not covered">            var crumbs = Unirest.trim(cookie).split('=')</span>
+<span class="cstat-no" title="statement not covered">            var key = Unirest.trim(crumbs[0])</span>
+<span class="cstat-no" title="statement not covered">            var value = Unirest.trim(crumbs.slice(1).join('='))</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (crumbs[0] &amp;&amp; crumbs[0] !== '') {</span>
-<span class="cstat-no" title="statement not covered" >              result.cookies[key] = value === '' ? true : value</span>
+<span class="cstat-no" title="statement not covered">            if (crumbs[0] &amp;&amp; crumbs[0] !== '') {</span>
+<span class="cstat-no" title="statement not covered">              result.cookies[key] = value === '' ? true : value</span>
             }
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          if (response.cookies &amp;&amp; is(response.cookies).a(Object) &amp;&amp; Object.keys(response.cookies).length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >            result.cookies = response.cookies</span>
+<span class="cstat-no" title="statement not covered">          if (response.cookies &amp;&amp; is(response.cookies).a(Object) &amp;&amp; Object.keys(response.cookies).length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered">            result.cookies = response.cookies</span>
           } else {
             // Handle cookies to be set
-<span class="cstat-no" title="statement not covered" >            var cookies = response.headers['set-cookie']</span>
-<span class="cstat-no" title="statement not covered" >            if (cookies &amp;&amp; is(cookies).a(Array)) {</span>
-<span class="cstat-no" title="statement not covered" >              for (var index = 0; index &lt; cookies.length; index++) {</span>
-<span class="cstat-no" title="statement not covered" >                var entry = cookies[index]</span>
+<span class="cstat-no" title="statement not covered">            var cookies = response.headers['set-cookie']</span>
+<span class="cstat-no" title="statement not covered">            if (cookies &amp;&amp; is(cookies).a(Array)) {</span>
+<span class="cstat-no" title="statement not covered">              for (var index = 0; index &lt; cookies.length; index++) {</span>
+<span class="cstat-no" title="statement not covered">                var entry = cookies[index]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >                if (is(entry).a(String) &amp;&amp; does(entry).contain(';')) {</span>
-<span class="cstat-no" title="statement not covered" >                  entry.split(';').forEach(setCookie)</span>
+<span class="cstat-no" title="statement not covered">                if (is(entry).a(String) &amp;&amp; does(entry).contain(';')) {</span>
+<span class="cstat-no" title="statement not covered">                  entry.split(';').forEach(setCookie)</span>
                 }
               }
             }
 &nbsp;
             // Handle cookies that have been set
-<span class="cstat-no" title="statement not covered" >            cookies = response.headers.cookie</span>
-<span class="cstat-no" title="statement not covered" >            if (cookies &amp;&amp; is(cookies).a(String)) {</span>
-<span class="cstat-no" title="statement not covered" >              cookies.split(';').forEach(setCookie)</span>
+<span class="cstat-no" title="statement not covered">            cookies = response.headers.cookie</span>
+<span class="cstat-no" title="statement not covered">            if (cookies &amp;&amp; is(cookies).a(String)) {</span>
+<span class="cstat-no" title="statement not covered">              cookies.split(';').forEach(setCookie)</span>
             }
           }
 &nbsp;
           // Obtain response body
-<span class="cstat-no" title="statement not covered" >          body = body || response.body</span>
-<span class="cstat-no" title="statement not covered" >          result.raw_body = body</span>
-<span class="cstat-no" title="statement not covered" >          result.headers = response.headers</span>
+<span class="cstat-no" title="statement not covered">          body = body || response.body</span>
+<span class="cstat-no" title="statement not covered">          result.raw_body = body</span>
+<span class="cstat-no" title="statement not covered">          result.headers = response.headers</span>
 &nbsp;
           // Handle Response Body
-<span class="cstat-no" title="statement not covered" >          if (body) {</span>
-<span class="cstat-no" title="statement not covered" >            type = Unirest.type(result.headers['content-type'], true)</span>
-<span class="cstat-no" title="statement not covered" >            if (type) <span class="cstat-no" title="statement not covered" >data = Unirest.Response.parse(body, type)</span></span>
-            else <span class="cstat-no" title="statement not covered" >data = body</span>
+<span class="cstat-no" title="statement not covered">          if (body) {</span>
+<span class="cstat-no" title="statement not covered">            type = Unirest.type(result.headers['content-type'], true)</span>
+<span class="cstat-no" title="statement not covered">            if (type) <span class="cstat-no" title="statement not covered">data = Unirest.Response.parse(body, type)</span></span>
+            else <span class="cstat-no" title="statement not covered">data = body</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          result.body = data</span>
+<span class="cstat-no" title="statement not covered">          result.body = data</span>
 &nbsp;
-          ;<span class="cstat-no" title="statement not covered" >(callback) &amp;&amp; callback(result)</span>
+          ;<span class="cstat-no" title="statement not covered">(callback) &amp;&amp; callback(result)</span>
         }
 &nbsp;
-<span class="fstat-no" title="function not covered" >        function handleGZIPResponse (response) {</span>
-<span class="cstat-no" title="statement not covered" >          if (/^(deflate|gzip)$/.test(response.headers['content-encoding'])) {</span>
-<span class="cstat-no" title="statement not covered" >            var unzip = zlib.createUnzip()</span>
-<span class="cstat-no" title="statement not covered" >            var stream = new Stream()</span>
-<span class="cstat-no" title="statement not covered" >            var _on = response.on</span>
-<span class="cstat-no" title="statement not covered" >            var decoder</span>
+<span class="fstat-no" title="function not covered">        function handleGZIPResponse (response) {</span>
+<span class="cstat-no" title="statement not covered">          if (/^(deflate|gzip)$/.test(response.headers['content-encoding'])) {</span>
+<span class="cstat-no" title="statement not covered">            var unzip = zlib.createUnzip()</span>
+<span class="cstat-no" title="statement not covered">            var stream = new Stream()</span>
+<span class="cstat-no" title="statement not covered">            var _on = response.on</span>
+<span class="cstat-no" title="statement not covered">            var decoder</span>
 &nbsp;
             // Keeping node happy
-<span class="cstat-no" title="statement not covered" >            stream.req = response.req</span>
+<span class="cstat-no" title="statement not covered">            stream.req = response.req</span>
 &nbsp;
             // Make sure we emit prior to processing
-<span class="cstat-no" title="statement not covered" >            unzip.on('error', <span class="fstat-no" title="function not covered" >function (error) {</span></span>
+<span class="cstat-no" title="statement not covered">            unzip.on('error', <span class="fstat-no" title="function not covered">function (error) {</span></span>
               // Catch the parser error when there is no content
-<span class="cstat-no" title="statement not covered" >              if (error.errno === zlib.Z_BUF_ERROR || error.errno === zlib.Z_DATA_ERROR) {</span>
-<span class="cstat-no" title="statement not covered" >                stream.emit('end')</span>
-<span class="cstat-no" title="statement not covered" >                return</span>
+<span class="cstat-no" title="statement not covered">              if (error.errno === zlib.Z_BUF_ERROR || error.errno === zlib.Z_DATA_ERROR) {</span>
+<span class="cstat-no" title="statement not covered">                stream.emit('end')</span>
+<span class="cstat-no" title="statement not covered">                return</span>
               }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >              stream.emit('error', error)</span>
+<span class="cstat-no" title="statement not covered">              stream.emit('error', error)</span>
             })
 &nbsp;
             // Start the processing
-<span class="cstat-no" title="statement not covered" >            response.pipe(unzip)</span>
+<span class="cstat-no" title="statement not covered">            response.pipe(unzip)</span>
 &nbsp;
             // Ensure encoding is captured
-<span class="cstat-no" title="statement not covered" >            response.setEncoding = <span class="fstat-no" title="function not covered" >function (type) {</span></span>
-<span class="cstat-no" title="statement not covered" >              decoder = new StringDecoder(type)</span>
+<span class="cstat-no" title="statement not covered">            response.setEncoding = <span class="fstat-no" title="function not covered">function (type) {</span></span>
+<span class="cstat-no" title="statement not covered">              decoder = new StringDecoder(type)</span>
             }
 &nbsp;
             // Capture decompression and decode with captured encoding
-<span class="cstat-no" title="statement not covered" >            unzip.on('data', <span class="fstat-no" title="function not covered" >function (buffer) {</span></span>
-<span class="cstat-no" title="statement not covered" >              if (!decoder) <span class="cstat-no" title="statement not covered" >return stream.emit('data', buffer)</span></span>
-<span class="cstat-no" title="statement not covered" >              var string = decoder.write(buffer)</span>
-<span class="cstat-no" title="statement not covered" >              if (string.length) <span class="cstat-no" title="statement not covered" >stream.emit('data', string)</span></span>
+<span class="cstat-no" title="statement not covered">            unzip.on('data', <span class="fstat-no" title="function not covered">function (buffer) {</span></span>
+<span class="cstat-no" title="statement not covered">              if (!decoder) <span class="cstat-no" title="statement not covered">return stream.emit('data', buffer)</span></span>
+<span class="cstat-no" title="statement not covered">              var string = decoder.write(buffer)</span>
+<span class="cstat-no" title="statement not covered">              if (string.length) <span class="cstat-no" title="statement not covered">stream.emit('data', string)</span></span>
             })
 &nbsp;
             // Emit yoself
-<span class="cstat-no" title="statement not covered" >            unzip.on('end', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >              stream.emit('end')</span>
+<span class="cstat-no" title="statement not covered">            unzip.on('end', <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">              stream.emit('end')</span>
             })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            response.on = <span class="fstat-no" title="function not covered" >function (type, next) {</span></span>
-<span class="cstat-no" title="statement not covered" >              if (type === 'data' || type === 'end') {</span>
-<span class="cstat-no" title="statement not covered" >                stream.on(type, next)</span>
-              } else <span class="cstat-no" title="statement not covered" >if (type === 'error') {</span>
-<span class="cstat-no" title="statement not covered" >                _on.call(response, type, next)</span>
+<span class="cstat-no" title="statement not covered">            response.on = <span class="fstat-no" title="function not covered">function (type, next) {</span></span>
+<span class="cstat-no" title="statement not covered">              if (type === 'data' || type === 'end') {</span>
+<span class="cstat-no" title="statement not covered">                stream.on(type, next)</span>
+              } else <span class="cstat-no" title="statement not covered">if (type === 'error') {</span>
+<span class="cstat-no" title="statement not covered">                _on.call(response, type, next)</span>
               } else {
-<span class="cstat-no" title="statement not covered" >                _on.call(response, type, next)</span>
+<span class="cstat-no" title="statement not covered">                _on.call(response, type, next)</span>
               }
             }
           }
         }
 &nbsp;
-<span class="fstat-no" title="function not covered" >        function handleFormData (form) {</span>
-<span class="cstat-no" title="statement not covered" >          for (var i = 0; i &lt; $this._multipart.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >            var item = $this._multipart[i]</span>
+<span class="fstat-no" title="function not covered">        function handleFormData (form) {</span>
+<span class="cstat-no" title="statement not covered">          for (var i = 0; i &lt; $this._multipart.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">            var item = $this._multipart[i]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (item.attachment &amp;&amp; is(item.value).a(String)) {</span>
-<span class="cstat-no" title="statement not covered" >              if (does(item.value).contain('http://') || does(item.value).contain('https://')) {</span>
-<span class="cstat-no" title="statement not covered" >                item.value = Unirest.request(item.value)</span>
+<span class="cstat-no" title="statement not covered">            if (item.attachment &amp;&amp; is(item.value).a(String)) {</span>
+<span class="cstat-no" title="statement not covered">              if (does(item.value).contain('http://') || does(item.value).contain('https://')) {</span>
+<span class="cstat-no" title="statement not covered">                item.value = Unirest.request(item.value)</span>
               } else {
-<span class="cstat-no" title="statement not covered" >                item.value = fs.createReadStream(path.resolve(item.value))</span>
+<span class="cstat-no" title="statement not covered">                item.value = fs.createReadStream(path.resolve(item.value))</span>
               }
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            form.append(item.name, item.value, item.options)</span>
+<span class="cstat-no" title="statement not covered">            form.append(item.name, item.value, item.options)</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          return form</span>
+<span class="cstat-no" title="statement not covered">          return form</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if ($this._multipart.length &amp;&amp; !$this._stream) {</span>
-<span class="cstat-no" title="statement not covered" >          header = $this.options.headers[$this.hasHeader('content-type')]</span>
-<span class="cstat-no" title="statement not covered" >          parts = URL.parse($this.options.url)</span>
-<span class="cstat-no" title="statement not covered" >          form = new FormData()</span>
+<span class="cstat-no" title="statement not covered">        if ($this._multipart.length &amp;&amp; !$this._stream) {</span>
+<span class="cstat-no" title="statement not covered">          header = $this.options.headers[$this.hasHeader('content-type')]</span>
+<span class="cstat-no" title="statement not covered">          parts = URL.parse($this.options.url)</span>
+<span class="cstat-no" title="statement not covered">          form = new FormData()</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          if (header) {</span>
-<span class="cstat-no" title="statement not covered" >            $this.options.headers['content-type'] = header.split(';')[0] + '; boundary=' + form.getBoundary()</span>
+<span class="cstat-no" title="statement not covered">          if (header) {</span>
+<span class="cstat-no" title="statement not covered">            $this.options.headers['content-type'] = header.split(';')[0] + '; boundary=' + form.getBoundary()</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            $this.options.headers['content-type'] = 'multipart/form-data; boundary=' + form.getBoundary()</span>
+<span class="cstat-no" title="statement not covered">            $this.options.headers['content-type'] = 'multipart/form-data; boundary=' + form.getBoundary()</span>
           }
 &nbsp;
-<span class="fstat-no" title="function not covered" >          function authn(auth) {</span>
-<span class="cstat-no" title="statement not covered" >              if (!auth) <span class="cstat-no" title="statement not covered" >return null;</span></span>
-<span class="cstat-no" title="statement not covered" >              if (typeof auth === 'string') <span class="cstat-no" title="statement not covered" >return auth;</span></span>
-<span class="cstat-no" title="statement not covered" >              if (auth.user &amp;&amp; auth.pass) <span class="cstat-no" title="statement not covered" >return auth.user + ':' + auth.pass;</span></span>
-<span class="cstat-no" title="statement not covered" >              return auth;</span>
+<span class="fstat-no" title="function not covered">          function authn(auth) {</span>
+<span class="cstat-no" title="statement not covered">              if (!auth) <span class="cstat-no" title="statement not covered">return null;</span></span>
+<span class="cstat-no" title="statement not covered">              if (typeof auth === 'string') <span class="cstat-no" title="statement not covered">return auth;</span></span>
+<span class="cstat-no" title="statement not covered">              if (auth.user &amp;&amp; auth.pass) <span class="cstat-no" title="statement not covered">return auth.user + ':' + auth.pass;</span></span>
+<span class="cstat-no" title="statement not covered">              return auth;</span>
           }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >          return handleFormData(form).submit({</span>
+<span class="cstat-no" title="statement not covered">          return handleFormData(form).submit({</span>
             protocol: parts.protocol,
             port: parts.port,
             // Formdata doesn't expect port to be included with host
@@ -2958,44 +2956,44 @@ var Unirest = function (method, uri, headers, body, callback) {
             method: $this.options.method,
             headers: $this.options.headers,
             auth: authn($this.options.auth || parts.auth)
-          }, <span class="fstat-no" title="function not covered" >function (error, response) {</span>
-<span class="cstat-no" title="statement not covered" >            var decoder = new StringDecoder('utf8')</span>
+          }, <span class="fstat-no" title="function not covered">function (error, response) {</span>
+<span class="cstat-no" title="statement not covered">            var decoder = new StringDecoder('utf8')</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (error) {</span>
-<span class="cstat-no" title="statement not covered" >              return handleRequestResponse(error, response)</span>
+<span class="cstat-no" title="statement not covered">            if (error) {</span>
+<span class="cstat-no" title="statement not covered">              return handleRequestResponse(error, response)</span>
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (!response.body) {</span>
-<span class="cstat-no" title="statement not covered" >              response.body = ''</span>
+<span class="cstat-no" title="statement not covered">            if (!response.body) {</span>
+<span class="cstat-no" title="statement not covered">              response.body = ''</span>
             }
 &nbsp;
             // Node 10+
-<span class="cstat-no" title="statement not covered" >            response.resume()</span>
+<span class="cstat-no" title="statement not covered">            response.resume()</span>
 &nbsp;
             // GZIP, Feel me?
-<span class="cstat-no" title="statement not covered" >            handleGZIPResponse(response)</span>
+<span class="cstat-no" title="statement not covered">            handleGZIPResponse(response)</span>
 &nbsp;
             // Fallback
-<span class="cstat-no" title="statement not covered" >            response.on('data', <span class="fstat-no" title="function not covered" >function (chunk) {</span></span>
-<span class="cstat-no" title="statement not covered" >              if (typeof chunk === 'string') <span class="cstat-no" title="statement not covered" >response.body += chunk</span></span>
-              else <span class="cstat-no" title="statement not covered" >response.body += decoder.write(chunk)</span>
+<span class="cstat-no" title="statement not covered">            response.on('data', <span class="fstat-no" title="function not covered">function (chunk) {</span></span>
+<span class="cstat-no" title="statement not covered">              if (typeof chunk === 'string') <span class="cstat-no" title="statement not covered">response.body += chunk</span></span>
+              else <span class="cstat-no" title="statement not covered">response.body += decoder.write(chunk)</span>
             })
 &nbsp;
             // After all, we end up here
-<span class="cstat-no" title="statement not covered" >            response.on('end', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >              return handleRequestResponse(error, response)</span>
+<span class="cstat-no" title="statement not covered">            response.on('end', <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">              return handleRequestResponse(error, response)</span>
             })
           })
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        Request = Unirest.request($this.options, handleRequestResponse)</span>
-<span class="cstat-no" title="statement not covered" >        Request.on('response', handleGZIPResponse)</span>
+<span class="cstat-no" title="statement not covered">        Request = Unirest.request($this.options, handleRequestResponse)</span>
+<span class="cstat-no" title="statement not covered">        Request.on('response', handleGZIPResponse)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if ($this._multipart.length &amp;&amp; $this._stream) {</span>
-<span class="cstat-no" title="statement not covered" >          handleFormData(Request.form())</span>
+<span class="cstat-no" title="statement not covered">        if ($this._multipart.length &amp;&amp; $this._stream) {</span>
+<span class="cstat-no" title="statement not covered">          handleFormData(Request.form())</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return Request</span>
+<span class="cstat-no" title="statement not covered">        return Request</span>
       }
     }
 &nbsp;
@@ -3003,21 +3001,21 @@ var Unirest = function (method, uri, headers, body, callback) {
      * Alias for _.header_
      * @type {Function}
      */
-<span class="cstat-no" title="statement not covered" >    $this.headers = $this.header</span>
+<span class="cstat-no" title="statement not covered">    $this.headers = $this.header</span>
 &nbsp;
     /**
      * Alias for _.header_
      *
      * @type {Function}
      */
-<span class="cstat-no" title="statement not covered" >    $this.set = $this.header</span>
+<span class="cstat-no" title="statement not covered">    $this.set = $this.header</span>
 &nbsp;
     /**
      * Alias for _.end_
      *
      * @type {Function}
      */
-<span class="cstat-no" title="statement not covered" >    $this.complete = $this.end</span>
+<span class="cstat-no" title="statement not covered">    $this.complete = $this.end</span>
 &nbsp;
     /**
      * Aliases for _.end_
@@ -3025,7 +3023,7 @@ var Unirest = function (method, uri, headers, body, callback) {
      * @type {Object}
      */
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    $this.as = {</span>
+<span class="cstat-no" title="statement not covered">    $this.as = {</span>
       json: $this.end,
       binary: $this.end,
       string: $this.end
@@ -3038,34 +3036,34 @@ var Unirest = function (method, uri, headers, body, callback) {
      * @param {Mixed} value
      * @param {Object} options
      */
-<span class="fstat-no" title="function not covered" >    function handleField (name, value, options) {</span>
-<span class="cstat-no" title="statement not covered" >      var serialized</span>
-<span class="cstat-no" title="statement not covered" >      var length</span>
-<span class="cstat-no" title="statement not covered" >      var key</span>
-<span class="cstat-no" title="statement not covered" >      var i</span>
+<span class="fstat-no" title="function not covered">    function handleField (name, value, options) {</span>
+<span class="cstat-no" title="statement not covered">      var serialized</span>
+<span class="cstat-no" title="statement not covered">      var length</span>
+<span class="cstat-no" title="statement not covered">      var key</span>
+<span class="cstat-no" title="statement not covered">      var i</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      options = options || { attachment: false }</span>
+<span class="cstat-no" title="statement not covered">      options = options || { attachment: false }</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (is(name).a(Object)) {</span>
-<span class="cstat-no" title="statement not covered" >        for (key in name) {</span>
-<span class="cstat-no" title="statement not covered" >          if (name.hasOwnProperty(key)) {</span>
-<span class="cstat-no" title="statement not covered" >            handleField(key, name[key], options)</span>
+<span class="cstat-no" title="statement not covered">      if (is(name).a(Object)) {</span>
+<span class="cstat-no" title="statement not covered">        for (key in name) {</span>
+<span class="cstat-no" title="statement not covered">          if (name.hasOwnProperty(key)) {</span>
+<span class="cstat-no" title="statement not covered">            handleField(key, name[key], options)</span>
           }
         }
       } else {
-<span class="cstat-no" title="statement not covered" >        if (is(value).a(Array)) {</span>
-<span class="cstat-no" title="statement not covered" >          for (i = 0, length = value.length; i &lt; length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >            serialized = handleFieldValue(value[i])</span>
-<span class="cstat-no" title="statement not covered" >            if (serialized) {</span>
-<span class="cstat-no" title="statement not covered" >              $this.rawField(name, serialized, options)</span>
+<span class="cstat-no" title="statement not covered">        if (is(value).a(Array)) {</span>
+<span class="cstat-no" title="statement not covered">          for (i = 0, length = value.length; i &lt; length; i++) {</span>
+<span class="cstat-no" title="statement not covered">            serialized = handleFieldValue(value[i])</span>
+<span class="cstat-no" title="statement not covered">            if (serialized) {</span>
+<span class="cstat-no" title="statement not covered">              $this.rawField(name, serialized, options)</span>
             }
           }
-        } else <span class="cstat-no" title="statement not covered" >if (value != null) {</span>
-<span class="cstat-no" title="statement not covered" >          $this.rawField(name, handleFieldValue(value), options)</span>
+        } else <span class="cstat-no" title="statement not covered">if (value != null) {</span>
+<span class="cstat-no" title="statement not covered">          $this.rawField(name, handleFieldValue(value), options)</span>
         }
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      return $this</span>
+<span class="cstat-no" title="statement not covered">      return $this</span>
     }
 &nbsp;
     /**
@@ -3073,59 +3071,59 @@ var Unirest = function (method, uri, headers, body, callback) {
      *
      * @param {Mixed} value
      */
-<span class="fstat-no" title="function not covered" >    function handleFieldValue (value) {</span>
-<span class="cstat-no" title="statement not covered" >      if (!(value instanceof Buffer || typeof value === 'string')) {</span>
-<span class="cstat-no" title="statement not covered" >        if (is(value).a(Object)) {</span>
-<span class="cstat-no" title="statement not covered" >          if (value instanceof fs.FileReadStream) {</span>
-<span class="cstat-no" title="statement not covered" >            return value</span>
+<span class="fstat-no" title="function not covered">    function handleFieldValue (value) {</span>
+<span class="cstat-no" title="statement not covered">      if (!(value instanceof Buffer || typeof value === 'string')) {</span>
+<span class="cstat-no" title="statement not covered">        if (is(value).a(Object)) {</span>
+<span class="cstat-no" title="statement not covered">          if (value instanceof fs.FileReadStream) {</span>
+<span class="cstat-no" title="statement not covered">            return value</span>
           } else {
-<span class="cstat-no" title="statement not covered" >            return Unirest.serializers.json(value)</span>
+<span class="cstat-no" title="statement not covered">            return Unirest.serializers.json(value)</span>
           }
         } else {
-<span class="cstat-no" title="statement not covered" >          return value.toString()</span>
+<span class="cstat-no" title="statement not covered">          return value.toString()</span>
         }
-      } else <span class="cstat-no" title="statement not covered" >return value</span>
+      } else <span class="cstat-no" title="statement not covered">return value</span>
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    function setupOption (name, ref) {</span>
-<span class="cstat-no" title="statement not covered" >      $this[name] = <span class="fstat-no" title="function not covered" >function (arg) {</span></span>
-<span class="cstat-no" title="statement not covered" >        $this.options[ref || name] = arg</span>
-<span class="cstat-no" title="statement not covered" >        return $this</span>
+<span class="fstat-no" title="function not covered">    function setupOption (name, ref) {</span>
+<span class="cstat-no" title="statement not covered">      $this[name] = <span class="fstat-no" title="function not covered">function (arg) {</span></span>
+<span class="cstat-no" title="statement not covered">        $this.options[ref || name] = arg</span>
+<span class="cstat-no" title="statement not covered">        return $this</span>
       }
     }
 &nbsp;
     // Iterates over a list of option methods to generate the chaining
     // style of use you see in Superagent and jQuery.
-<span class="cstat-no" title="statement not covered" >    for (var x in Unirest.enum.options) {</span>
-<span class="cstat-no" title="statement not covered" >      if (Unirest.enum.options.hasOwnProperty(x)) {</span>
-<span class="cstat-no" title="statement not covered" >        var option = Unirest.enum.options[x]</span>
-<span class="cstat-no" title="statement not covered" >        var reference = null</span>
+<span class="cstat-no" title="statement not covered">    for (var x in Unirest.enum.options) {</span>
+<span class="cstat-no" title="statement not covered">      if (Unirest.enum.options.hasOwnProperty(x)) {</span>
+<span class="cstat-no" title="statement not covered">        var option = Unirest.enum.options[x]</span>
+<span class="cstat-no" title="statement not covered">        var reference = null</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (option.indexOf(':') &gt; -1) {</span>
-<span class="cstat-no" title="statement not covered" >          option = option.split(':')</span>
-<span class="cstat-no" title="statement not covered" >          reference = option[1]</span>
-<span class="cstat-no" title="statement not covered" >          option = option[0]</span>
+<span class="cstat-no" title="statement not covered">        if (option.indexOf(':') &gt; -1) {</span>
+<span class="cstat-no" title="statement not covered">          option = option.split(':')</span>
+<span class="cstat-no" title="statement not covered">          reference = option[1]</span>
+<span class="cstat-no" title="statement not covered">          option = option[0]</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        setupOption(option, reference)</span>
+<span class="cstat-no" title="statement not covered">        setupOption(option, reference)</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (headers &amp;&amp; typeof headers === 'function') {</span>
-<span class="cstat-no" title="statement not covered" >      callback = headers</span>
-<span class="cstat-no" title="statement not covered" >      headers = null</span>
-    } else <span class="cstat-no" title="statement not covered" >if (body &amp;&amp; typeof body === 'function') {</span>
-<span class="cstat-no" title="statement not covered" >      callback = body</span>
-<span class="cstat-no" title="statement not covered" >      body = null</span>
+<span class="cstat-no" title="statement not covered">    if (headers &amp;&amp; typeof headers === 'function') {</span>
+<span class="cstat-no" title="statement not covered">      callback = headers</span>
+<span class="cstat-no" title="statement not covered">      headers = null</span>
+    } else <span class="cstat-no" title="statement not covered">if (body &amp;&amp; typeof body === 'function') {</span>
+<span class="cstat-no" title="statement not covered">      callback = body</span>
+<span class="cstat-no" title="statement not covered">      body = null</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (headers) <span class="cstat-no" title="statement not covered" >$this.set(headers)</span></span>
-<span class="cstat-no" title="statement not covered" >    if (body) <span class="cstat-no" title="statement not covered" >$this.send(body)</span></span>
+<span class="cstat-no" title="statement not covered">    if (headers) <span class="cstat-no" title="statement not covered">$this.set(headers)</span></span>
+<span class="cstat-no" title="statement not covered">    if (body) <span class="cstat-no" title="statement not covered">$this.send(body)</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return callback ? $this.end(callback) : $this</span>
+<span class="cstat-no" title="statement not covered">    return callback ? $this.end(callback) : $this</span>
   }
 &nbsp;
-  return uri ? <span class="branch-0 cbranch-no" title="branch not covered" >unirest(uri, headers, body, callback) </span>: unirest
+  return uri ? <span class="branch-0 cbranch-no" title="branch not covered">unirest(uri, headers, body, callback) </span>: unirest
 }
 &nbsp;
 /**
@@ -3142,9 +3140,9 @@ Unirest.pipe = Unirest.request.pipe
  * @param  {Boolean} parse Should we parse?
  * @return {String}
  */
-Unirest.type = <span class="fstat-no" title="function not covered" >function (type, parse) {</span>
-<span class="cstat-no" title="statement not covered" >  if (typeof type !== 'string') <span class="cstat-no" title="statement not covered" >return false</span></span>
-<span class="cstat-no" title="statement not covered" >  return parse ? type.split(/ *; */).shift() : (Unirest.types[type] || type)</span>
+Unirest.type = <span class="fstat-no" title="function not covered">function (type, parse) {</span>
+<span class="cstat-no" title="statement not covered">  if (typeof type !== 'string') <span class="cstat-no" title="statement not covered">return false</span></span>
+<span class="cstat-no" title="statement not covered">  return parse ? type.split(/ *; */).shift() : (Unirest.types[type] || type)</span>
 }
 &nbsp;
 /**
@@ -3153,8 +3151,8 @@ Unirest.type = <span class="fstat-no" title="function not covered" >function (ty
  * @type {String}
  */
 Unirest.trim = ''.trim
-  ? <span class="fstat-no" title="function not covered" >function (s) {</span> <span class="cstat-no" title="statement not covered" >return s.trim() }</span>
-  : <span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >function (s) {</span> <span class="cstat-no" title="statement not covered" >return s.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '') }</span></span>
+  ? <span class="fstat-no" title="function not covered">function (s) {</span> <span class="cstat-no" title="statement not covered">return s.trim() }</span>
+  : <span class="fstat-no" title="function not covered"><span class="branch-1 cbranch-no" title="branch not covered">function (s) {</span> <span class="cstat-no" title="statement not covered">return s.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '') }</span></span>
 &nbsp;
 /**
  * Parser methods for different data types.
@@ -3162,27 +3160,27 @@ Unirest.trim = ''.trim
  * @type {Object}
  */
 Unirest.parsers = {
-  string: <span class="fstat-no" title="function not covered" >function (data) {</span>
-<span class="cstat-no" title="statement not covered" >    var obj = {}</span>
-<span class="cstat-no" title="statement not covered" >    var pairs = data.split('&amp;')</span>
-<span class="cstat-no" title="statement not covered" >    var parts</span>
-<span class="cstat-no" title="statement not covered" >    var pair</span>
+  string: <span class="fstat-no" title="function not covered">function (data) {</span>
+<span class="cstat-no" title="statement not covered">    var obj = {}</span>
+<span class="cstat-no" title="statement not covered">    var pairs = data.split('&amp;')</span>
+<span class="cstat-no" title="statement not covered">    var parts</span>
+<span class="cstat-no" title="statement not covered">    var pair</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    for (var i = 0, len = pairs.length; i &lt; len; ++i) {</span>
-<span class="cstat-no" title="statement not covered" >      pair = pairs[i]</span>
-<span class="cstat-no" title="statement not covered" >      parts = pair.split('=')</span>
-<span class="cstat-no" title="statement not covered" >      obj[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1])</span>
+<span class="cstat-no" title="statement not covered">    for (var i = 0, len = pairs.length; i &lt; len; ++i) {</span>
+<span class="cstat-no" title="statement not covered">      pair = pairs[i]</span>
+<span class="cstat-no" title="statement not covered">      parts = pair.split('=')</span>
+<span class="cstat-no" title="statement not covered">      obj[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1])</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return obj</span>
+<span class="cstat-no" title="statement not covered">    return obj</span>
   },
 &nbsp;
-  json: <span class="fstat-no" title="function not covered" >function (data) {</span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      data = JSON.parse(data)</span>
+  json: <span class="fstat-no" title="function not covered">function (data) {</span>
+<span class="cstat-no" title="statement not covered">    try {</span>
+<span class="cstat-no" title="statement not covered">      data = JSON.parse(data)</span>
     } catch (e) {}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return data</span>
+<span class="cstat-no" title="statement not covered">    return data</span>
   }
 }
 &nbsp;
@@ -3192,12 +3190,12 @@ Unirest.parsers = {
  * @type {Object}
  */
 Unirest.serializers = {
-  form: <span class="fstat-no" title="function not covered" >function (obj) {</span>
-<span class="cstat-no" title="statement not covered" >    return QueryString.stringify(obj)</span>
+  form: <span class="fstat-no" title="function not covered">function (obj) {</span>
+<span class="cstat-no" title="statement not covered">    return QueryString.stringify(obj)</span>
   },
 &nbsp;
-  json: <span class="fstat-no" title="function not covered" >function (obj) {</span>
-<span class="cstat-no" title="statement not covered" >    return JSON.stringify(obj)</span>
+  json: <span class="fstat-no" title="function not covered">function (obj) {</span>
+<span class="cstat-no" title="statement not covered">    return JSON.stringify(obj)</span>
   }
 }
 &nbsp;
@@ -3207,17 +3205,17 @@ Unirest.serializers = {
  * @type {Object}
  */
 Unirest.Request = {
-  serialize: <span class="fstat-no" title="function not covered" >function (string, type) {</span>
-<span class="cstat-no" title="statement not covered" >    var serializer = Unirest.firstMatch(type, Unirest.enum.serialize)</span>
-<span class="cstat-no" title="statement not covered" >    return serializer ? serializer(string) : string</span>
+  serialize: <span class="fstat-no" title="function not covered">function (string, type) {</span>
+<span class="cstat-no" title="statement not covered">    var serializer = Unirest.firstMatch(type, Unirest.enum.serialize)</span>
+<span class="cstat-no" title="statement not covered">    return serializer ? serializer(string) : string</span>
   },
 &nbsp;
-  uid: <span class="fstat-no" title="function not covered" >function (len) {</span>
-<span class="cstat-no" title="statement not covered" >    var output = ''</span>
-<span class="cstat-no" title="statement not covered" >    var chars = 'abcdefghijklmnopqrstuvwxyz123456789'</span>
-<span class="cstat-no" title="statement not covered" >    var nchars = chars.length</span>
-<span class="cstat-no" title="statement not covered" >    while (len--) <span class="cstat-no" title="statement not covered" >output += chars[Math.random() * nchars | 0]</span></span>
-<span class="cstat-no" title="statement not covered" >    return output</span>
+  uid: <span class="fstat-no" title="function not covered">function (len) {</span>
+<span class="cstat-no" title="statement not covered">    var output = ''</span>
+<span class="cstat-no" title="statement not covered">    var chars = 'abcdefghijklmnopqrstuvwxyz123456789'</span>
+<span class="cstat-no" title="statement not covered">    var nchars = chars.length</span>
+<span class="cstat-no" title="statement not covered">    while (len--) <span class="cstat-no" title="statement not covered">output += chars[Math.random() * nchars | 0]</span></span>
+<span class="cstat-no" title="statement not covered">    return output</span>
   }
 }
 &nbsp;
@@ -3227,31 +3225,31 @@ Unirest.Request = {
  * @type {Object}
  */
 Unirest.Response = {
-  parse: <span class="fstat-no" title="function not covered" >function (string, type) {</span>
-<span class="cstat-no" title="statement not covered" >    var parser = Unirest.firstMatch(type, Unirest.enum.parse)</span>
-<span class="cstat-no" title="statement not covered" >    return parser ? parser(string) : string</span>
+  parse: <span class="fstat-no" title="function not covered">function (string, type) {</span>
+<span class="cstat-no" title="statement not covered">    var parser = Unirest.firstMatch(type, Unirest.enum.parse)</span>
+<span class="cstat-no" title="statement not covered">    return parser ? parser(string) : string</span>
   },
 &nbsp;
-  parseHeader: <span class="fstat-no" title="function not covered" >function (str) {</span>
-<span class="cstat-no" title="statement not covered" >    var lines = str.split(/\r?\n/)</span>
-<span class="cstat-no" title="statement not covered" >    var fields = {}</span>
-<span class="cstat-no" title="statement not covered" >    var index</span>
-<span class="cstat-no" title="statement not covered" >    var line</span>
-<span class="cstat-no" title="statement not covered" >    var field</span>
-<span class="cstat-no" title="statement not covered" >    var val</span>
+  parseHeader: <span class="fstat-no" title="function not covered">function (str) {</span>
+<span class="cstat-no" title="statement not covered">    var lines = str.split(/\r?\n/)</span>
+<span class="cstat-no" title="statement not covered">    var fields = {}</span>
+<span class="cstat-no" title="statement not covered">    var index</span>
+<span class="cstat-no" title="statement not covered">    var line</span>
+<span class="cstat-no" title="statement not covered">    var field</span>
+<span class="cstat-no" title="statement not covered">    var val</span>
 &nbsp;
     // Trailing CRLF
-<span class="cstat-no" title="statement not covered" >    lines.pop()</span>
+<span class="cstat-no" title="statement not covered">    lines.pop()</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    for (var i = 0, len = lines.length; i &lt; len; ++i) {</span>
-<span class="cstat-no" title="statement not covered" >      line = lines[i]</span>
-<span class="cstat-no" title="statement not covered" >      index = line.indexOf(':')</span>
-<span class="cstat-no" title="statement not covered" >      field = line.slice(0, index).toLowerCase()</span>
-<span class="cstat-no" title="statement not covered" >      val = Unirest.trim(line.slice(index + 1))</span>
-<span class="cstat-no" title="statement not covered" >      fields[field] = val</span>
+<span class="cstat-no" title="statement not covered">    for (var i = 0, len = lines.length; i &lt; len; ++i) {</span>
+<span class="cstat-no" title="statement not covered">      line = lines[i]</span>
+<span class="cstat-no" title="statement not covered">      index = line.indexOf(':')</span>
+<span class="cstat-no" title="statement not covered">      field = line.slice(0, index).toLowerCase()</span>
+<span class="cstat-no" title="statement not covered">      val = Unirest.trim(line.slice(index + 1))</span>
+<span class="cstat-no" title="statement not covered">      fields[field] = val</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return fields</span>
+<span class="cstat-no" title="statement not covered">    return fields</span>
   },
 &nbsp;
   statusCodes: {
@@ -3316,25 +3314,25 @@ Unirest.Response = {
  *
  * @return {Function} Cookie Store
  */
-Unirest.jar = <span class="fstat-no" title="function not covered" >function (options) {</span>
-<span class="cstat-no" title="statement not covered" >  var jar = Unirest.request.jar()</span>
-<span class="cstat-no" title="statement not covered" >  options = options || {}</span>
+Unirest.jar = <span class="fstat-no" title="function not covered">function (options) {</span>
+<span class="cstat-no" title="statement not covered">  var jar = Unirest.request.jar()</span>
+<span class="cstat-no" title="statement not covered">  options = options || {}</span>
 &nbsp;
   // Because Requests aliases toughcookie rather than returning.
-<span class="cstat-no" title="statement not covered" >  if (options.store) {</span>
-<span class="cstat-no" title="statement not covered" >    jar._jar.store = options.store</span>
+<span class="cstat-no" title="statement not covered">  if (options.store) {</span>
+<span class="cstat-no" title="statement not covered">    jar._jar.store = options.store</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (options.rejectPublicSuffixes) {</span>
-<span class="cstat-no" title="statement not covered" >    jar._jar.rejectPublicSuffixes = options.rejectPublicSuffixes</span>
+<span class="cstat-no" title="statement not covered">  if (options.rejectPublicSuffixes) {</span>
+<span class="cstat-no" title="statement not covered">    jar._jar.rejectPublicSuffixes = options.rejectPublicSuffixes</span>
   }
 &nbsp;
   // Alias helper methods
-<span class="cstat-no" title="statement not covered" >  jar.add = jar.setCookie</span>
-<span class="cstat-no" title="statement not covered" >  jar.toString = jar.getCookieString</span>
+<span class="cstat-no" title="statement not covered">  jar.add = jar.setCookie</span>
+<span class="cstat-no" title="statement not covered">  jar.toString = jar.getCookieString</span>
 &nbsp;
   // Export
-<span class="cstat-no" title="statement not covered" >  return jar</span>
+<span class="cstat-no" title="statement not covered">  return jar</span>
 }
 &nbsp;
 /**
@@ -3381,20 +3379,20 @@ Unirest.enum = {
  * @param  {Object|Array} map    Values / Keys to test against string.
  * @return {Array} List of values truthfully matched against string.
  */
-Unirest.matches = <span class="fstat-no" title="function not covered" >function matches (string, map) {</span>
-<span class="cstat-no" title="statement not covered" >  var results = []</span>
+Unirest.matches = <span class="fstat-no" title="function not covered">function matches (string, map) {</span>
+<span class="cstat-no" title="statement not covered">  var results = []</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  for (var key in map) {</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof map.length !== 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      key = map[key]</span>
+<span class="cstat-no" title="statement not covered">  for (var key in map) {</span>
+<span class="cstat-no" title="statement not covered">    if (typeof map.length !== 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">      key = map[key]</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (string.indexOf(key) !== -1) {</span>
-<span class="cstat-no" title="statement not covered" >      results.push(map[key])</span>
+<span class="cstat-no" title="statement not covered">    if (string.indexOf(key) !== -1) {</span>
+<span class="cstat-no" title="statement not covered">      results.push(map[key])</span>
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return results</span>
+<span class="cstat-no" title="statement not covered">  return results</span>
 }
 &nbsp;
 /**
@@ -3405,8 +3403,8 @@ Unirest.matches = <span class="fstat-no" title="function not covered" >function 
  * @param  {Object|Array} map Values / Keys to test against string.
  * @return {Mixed} First match value
  */
-Unirest.firstMatch = <span class="fstat-no" title="function not covered" >function firstMatch (string, map) {</span>
-<span class="cstat-no" title="statement not covered" >  return Unirest.matches(string, map)[0]</span>
+Unirest.firstMatch = <span class="fstat-no" title="function not covered">function firstMatch (string, map) {</span>
+<span class="cstat-no" title="statement not covered">  return Unirest.matches(string, map)[0]</span>
 }
 &nbsp;
 /**
@@ -3429,12 +3427,12 @@ for (var i = 0; i &lt; Unirest.enum.methods.length; i++) {
  * @param  {Mixed}  value  Could be anything.
  * @return {Object}
  */
-<span class="fstat-no" title="function not covered" >function is (value) {</span>
-<span class="cstat-no" title="statement not covered" >  return {</span>
-    a: <span class="fstat-no" title="function not covered" >function (check) {</span>
-<span class="cstat-no" title="statement not covered" >      if (check.prototype) <span class="cstat-no" title="statement not covered" >check = check.prototype.constructor.name</span></span>
-<span class="cstat-no" title="statement not covered" >      var type = Object.prototype.toString.call(value).slice(8, -1).toLowerCase()</span>
-<span class="cstat-no" title="statement not covered" >      return value != null &amp;&amp; type === check.toLowerCase()</span>
+<span class="fstat-no" title="function not covered">function is (value) {</span>
+<span class="cstat-no" title="statement not covered">  return {</span>
+    a: <span class="fstat-no" title="function not covered">function (check) {</span>
+<span class="cstat-no" title="statement not covered">      if (check.prototype) <span class="cstat-no" title="statement not covered">check = check.prototype.constructor.name</span></span>
+<span class="cstat-no" title="statement not covered">      var type = Object.prototype.toString.call(value).slice(8, -1).toLowerCase()</span>
+<span class="cstat-no" title="statement not covered">      return value != null &amp;&amp; type === check.toLowerCase()</span>
     }
   }
 }
@@ -3445,35 +3443,35 @@ for (var i = 0; i &lt; Unirest.enum.methods.length; i++) {
  * @param  {Mixed}  value  Could be anything.
  * @return {Object}
  */
-<span class="fstat-no" title="function not covered" >function does (value) {</span>
-<span class="cstat-no" title="statement not covered" >  var arrayIndexOf = (Array.indexOf ? <span class="fstat-no" title="function not covered" >function (arr, obj, from) {</span></span>
-<span class="cstat-no" title="statement not covered" >    return arr.indexOf(obj, from)</span>
-  } : <span class="fstat-no" title="function not covered" >function (arr, obj, from) {</span>
-<span class="cstat-no" title="statement not covered" >    var l = arr.length</span>
-<span class="cstat-no" title="statement not covered" >    var i = from ? parseInt((1 * from) + (from &lt; 0 ? l : 0), 10) : 0</span>
-<span class="cstat-no" title="statement not covered" >    i = i &lt; 0 ? 0 : i</span>
-<span class="cstat-no" title="statement not covered" >    for (; i &lt; l; i++) <span class="cstat-no" title="statement not covered" >if (i in arr &amp;&amp; arr[i] === obj) <span class="cstat-no" title="statement not covered" >return i</span></span></span>
-<span class="cstat-no" title="statement not covered" >    return -1</span>
+<span class="fstat-no" title="function not covered">function does (value) {</span>
+<span class="cstat-no" title="statement not covered">  var arrayIndexOf = (Array.indexOf ? <span class="fstat-no" title="function not covered">function (arr, obj, from) {</span></span>
+<span class="cstat-no" title="statement not covered">    return arr.indexOf(obj, from)</span>
+  } : <span class="fstat-no" title="function not covered">function (arr, obj, from) {</span>
+<span class="cstat-no" title="statement not covered">    var l = arr.length</span>
+<span class="cstat-no" title="statement not covered">    var i = from ? parseInt((1 * from) + (from &lt; 0 ? l : 0), 10) : 0</span>
+<span class="cstat-no" title="statement not covered">    i = i &lt; 0 ? 0 : i</span>
+<span class="cstat-no" title="statement not covered">    for (; i &lt; l; i++) <span class="cstat-no" title="statement not covered">if (i in arr &amp;&amp; arr[i] === obj) <span class="cstat-no" title="statement not covered">return i</span></span></span>
+<span class="cstat-no" title="statement not covered">    return -1</span>
   })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return {</span>
-    startWith: <span class="fstat-no" title="function not covered" >function (string) {</span>
-<span class="cstat-no" title="statement not covered" >      if (is(value).a(String)) <span class="cstat-no" title="statement not covered" >return value.slice(0, string.length) === string</span></span>
-<span class="cstat-no" title="statement not covered" >      if (is(value).a(Array)) <span class="cstat-no" title="statement not covered" >return value[0] === string</span></span>
-<span class="cstat-no" title="statement not covered" >      return false</span>
+<span class="cstat-no" title="statement not covered">  return {</span>
+    startWith: <span class="fstat-no" title="function not covered">function (string) {</span>
+<span class="cstat-no" title="statement not covered">      if (is(value).a(String)) <span class="cstat-no" title="statement not covered">return value.slice(0, string.length) === string</span></span>
+<span class="cstat-no" title="statement not covered">      if (is(value).a(Array)) <span class="cstat-no" title="statement not covered">return value[0] === string</span></span>
+<span class="cstat-no" title="statement not covered">      return false</span>
     },
 &nbsp;
-    endWith: <span class="fstat-no" title="function not covered" >function (string) {</span>
-<span class="cstat-no" title="statement not covered" >      if (is(value).a(String)) <span class="cstat-no" title="statement not covered" >return value.slice(-string.length) === string</span></span>
-<span class="cstat-no" title="statement not covered" >      if (is(value).a(Array)) <span class="cstat-no" title="statement not covered" >return value[value.length - 1] === string</span></span>
-<span class="cstat-no" title="statement not covered" >      return false</span>
+    endWith: <span class="fstat-no" title="function not covered">function (string) {</span>
+<span class="cstat-no" title="statement not covered">      if (is(value).a(String)) <span class="cstat-no" title="statement not covered">return value.slice(-string.length) === string</span></span>
+<span class="cstat-no" title="statement not covered">      if (is(value).a(Array)) <span class="cstat-no" title="statement not covered">return value[value.length - 1] === string</span></span>
+<span class="cstat-no" title="statement not covered">      return false</span>
     },
 &nbsp;
-    contain: <span class="fstat-no" title="function not covered" >function (field) {</span>
-<span class="cstat-no" title="statement not covered" >      if (is(value).a(String)) <span class="cstat-no" title="statement not covered" >return value.indexOf(field) &gt; -1</span></span>
-<span class="cstat-no" title="statement not covered" >      if (is(value).a(Object)) <span class="cstat-no" title="statement not covered" >return value.hasOwnProperty(field)</span></span>
-<span class="cstat-no" title="statement not covered" >      if (is(value).a(Array)) <span class="cstat-no" title="statement not covered" >return !!~arrayIndexOf(value, field)</span></span>
-<span class="cstat-no" title="statement not covered" >      return false</span>
+    contain: <span class="fstat-no" title="function not covered">function (field) {</span>
+<span class="cstat-no" title="statement not covered">      if (is(value).a(String)) <span class="cstat-no" title="statement not covered">return value.indexOf(field) &gt; -1</span></span>
+<span class="cstat-no" title="statement not covered">      if (is(value).a(Object)) <span class="cstat-no" title="statement not covered">return value.hasOwnProperty(field)</span></span>
+<span class="cstat-no" title="statement not covered">      if (is(value).a(Array)) <span class="cstat-no" title="statement not covered">return !!~arrayIndexOf(value, field)</span></span>
+<span class="cstat-no" title="statement not covered">      return false</span>
     }
   }
 }
@@ -3485,10 +3483,11 @@ for (var i = 0; i &lt; Unirest.enum.methods.length; i++) {
 module.exports = exports = Unirest
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 22:58:18 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 05:50:06 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
