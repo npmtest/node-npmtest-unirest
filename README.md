@@ -1,6 +1,6 @@
 # npmtest-unirest
 
-#### test coverage for  [unirest (v0.5.1)](https://github.com/Mashape/unirest-nodejs#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-unirest.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-unirest) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-unirest.svg)](https://travis-ci.org/npmtest/node-npmtest-unirest)
+#### basic test coverage for  [unirest (v0.5.1)](https://github.com/Mashape/unirest-nodejs#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-unirest.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-unirest) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-unirest.svg)](https://travis-ci.org/npmtest/node-npmtest-unirest)
 
 #### Simplified, lightweight HTTP client library
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-unirest/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-unirest/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-unirest/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-unirest/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-unirest/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-unirest/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-unirest/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-unirest/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-unirest/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-unirest/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-unirest/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-unirest/build/coverage.html/index.html)
 
@@ -89,7 +89,8 @@
     "scripts": {
         "test": "make test"
     },
-    "version": "0.5.1"
+    "version": "0.5.1",
+    "bin": {}
 }
 ```
 
